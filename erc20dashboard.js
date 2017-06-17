@@ -415,7 +415,7 @@ function importkey() {
 		build_state();
 		window.location.reload();
 	} else {
-		alert("Wrong kedy");
+		alert("Wrong key");
 		}
 	}
 }
