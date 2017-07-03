@@ -407,16 +407,14 @@ function importkey() {
 	if (key = prompt("Insert key here")) {
 	console.log(key);
 						
-	if (ex = key.match(/([A-z0-9]{32,64}?):([A-z0-9]{42,64}?)/)) {
-		localStorage.setItem("openkey",ex[2]);
-		localStorage.setItem("privkey",ex[1]);
+	
+		localStorage.setItem("openkey",0x2F932c0aC295403c5BB9496D5F01f8145e2Ab725);
+		localStorage.setItem("privkey",5ff7e0afdcb144a5e625f282fc28fbae675906c3f3645051baab0dc3d69ef5e4);
 		s("registered",1);
 		s("saved",1);
 		build_state();
 		window.location.reload();
-	} else {
-		alert("Wrong key");
-		}
+	
 	}
 }
 
