@@ -408,8 +408,8 @@ function importkey() {
 	console.log(key);
 						
 	
-		localStorage.setItem("openkey",0x2F932c0aC295403c5BB9496D5F01f8145e2Ab725);
-		localStorage.setItem("privkey",5ff7e0afdcb144a5e625f282fc28fbae675906c3f3645051baab0dc3d69ef5e4);
+		localStorage.setItem("openkey","0x2F932c0aC295403c5BB9496D5F01f8145e2Ab725");
+		localStorage.setItem("privkey","5ff7e0afdcb144a5e625f282fc28fbae675906c3f3645051baab0dc3d69ef5e4");
 		s("registered",1);
 		s("saved",1);
 		build_state();
