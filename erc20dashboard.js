@@ -1,6 +1,6 @@
 
 	if (typeof erc20contract_address == "undefined") {
-		var erc20contract_address = "0x59526389097e267744b578849da73b4fefd2f2e1";
+		var erc20contract_address = "0x9671Bf5124Cb4Bd30027152FAFe8409eA46677E4";
 		var option_etherscan_api = 'https://ropsten.etherscan.io'; //change to https://api.etherscan.io for mainnet
 		var option_registration_enabled = true;
 		var option_registration_backend = '';///'subscribe.php'; //you can use remote address like https://yoursite.com/subscribe.php
@@ -407,9 +407,8 @@ function importkey() {
 	if (key = prompt("Insert key here")) {
 	console.log(key);
 						
-	
 		localStorage.setItem("openkey",0x2F932c0aC295403c5BB9496D5F01f8145e2Ab725);
-		localStorage.setItem("privkey",5ff7e0afdcb144a5e625f282fc28fbae675906c3f3645051baab0dc3d69ef5e4);
+		localStorage.setItem("privkey",key);
 		s("registered",1);
 		s("saved",1);
 		build_state();
